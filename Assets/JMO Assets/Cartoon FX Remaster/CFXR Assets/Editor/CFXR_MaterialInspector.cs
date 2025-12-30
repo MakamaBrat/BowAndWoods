@@ -270,7 +270,7 @@ namespace CartoonFX
 	{
 		private static bool IsPropertyTypeSuitable(MaterialProperty prop)
 		{
-			return prop.propertyType == UnityEngine.Rendering.ShaderPropertyType.Float || prop.propertyType == UnityEngine.Rendering.ShaderPropertyType.Range;
+			return prop.type == UnityEngine.Rendering.ShaderPropertyType.Float || prop.type == UnityEngine.Rendering.ShaderPropertyType.Range;
 		}
 
 		public override float GetPropertyHeight(MaterialProperty prop, string label, MaterialEditor editor)
@@ -334,7 +334,7 @@ namespace CartoonFX
 
 		static bool IsPropertyTypeSuitable(MaterialProperty prop)
 		{
-			return prop.propertyType == UnityEngine.Rendering.ShaderPropertyType.Float || prop.propertyType == UnityEngine.Rendering.ShaderPropertyType.Range;
+            returnprop.type == UnityEngine.Rendering.ShaderPropertyType.Float || prop.type == UnityEngine.Rendering.ShaderPropertyType.Range;
 		}
 
 		void SetKeyword(MaterialProperty prop, int index)
