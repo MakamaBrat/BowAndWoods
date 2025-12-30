@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,13 +14,13 @@ public class GameManager : MonoBehaviour
     [Header("Arrows Settings")]
     public int maxArrows = 5;           // Максимальное количество стрел при старте
     private int currentArrows;          // Текущие стрелы
-    public TextMeshProUGUI arrowsText;  // UI для отображения стрел
+    public Text arrowsText;  // UI для отображения стрел
 
     [Header("Score Settings")]
     public int currentScore = 0;        // Текущий счёт
     public int bestScore = 0;           // Лучший счёт
-    public TextMeshProUGUI currentScoreText;
-    public TextMeshProUGUI bestScoreText;
+    public Text currentScoreText;
+    public Text bestScoreText;
 
     private void OnEnable()
     {
