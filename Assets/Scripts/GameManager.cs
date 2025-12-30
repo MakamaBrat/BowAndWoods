@@ -63,10 +63,10 @@ public class GameManager : MonoBehaviour
     private void UpdateScoreUI()
     {
         if (currentScoreText != null)
-            currentScoreText.text = $"Score: {currentScore}";
+            currentScoreText.text = $"{currentScore}";
 
         if (bestScoreText != null)
-            bestScoreText.text = $"Best: {bestScore}";
+            bestScoreText.text = $"{bestScore}";
     }
 
     // Метод для траты стрел
